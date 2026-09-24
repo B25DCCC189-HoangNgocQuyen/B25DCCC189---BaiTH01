@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoàng Ngọc Quyên – Giới thiệu bản thân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / MENU ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#gioi-thieu" class="logo">Quyên<span>.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Menu chính">
+        <ul class="nav-list">
+          <li><a href="#gioi-thieu" class="nav-link">Giới thiệu</a></li>
+          <li><a href="#ky-nang" class="nav-link">Kỹ năng</a></li>
+          <li><a href="#du-an" class="nav-link">Dự án</a></li>
+          <li><a href="#lien-he" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙</button>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== GIỚI THIỆU ===== -->
+    <section id="gioi-thieu" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-hello">Xin chào, mình là</p>
+          <h1 class="hero-name">Hoàng Ngọc Quyên</h1>
+          <p class="hero-desc">
+            Sinh viên ngành Công nghệ Thông tin tại Học viện Công nghệ Bưu chính
+            Viễn thông (PTIT). Mình thích ngồi làm những tool, dự án nhỏ và nhìn
+            chúng thật sự chạy được.
+          </p>
+          <div class="hero-buttons">
+            <a href="#du-an" class="btn btn-primary">Xem dự án</a>
+            <a href="#lien-he" class="btn btn-outline">Liên hệ với mình</a>
+          </div>
+        </div>
+
+        <dl class="hero-info">
+          <div><dt>Mã sinh viên</dt><dd>B25DCCC189</dd></div>
+          <div><dt>Trường</dt><dd>Học viện Công nghệ Bưu chính Viễn thông</dd></div>
+          <div><dt>Ngành</dt><dd>Công nghệ Thông tin (Cử nhân)</dd></div>
+          <div><dt>Mục tiêu</dt><dd>Thành thạo ngôn ngữ lập trình và có công việc ổn định</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== KỸ NĂNG ===== -->
+    <section id="ky-nang" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Kỹ năng</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Lập trình web</h3>
+            <ul class="skill-list">
+              <li><span>HTML</span><div class="bar"><i style="--w:70%"></i></div></li>
+              <li><span>JavaScript</span><div class="bar"><i style="--w:55%"></i></div></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Ngôn ngữ khác</h3>
+            <ul class="skill-list">
+              <li><span>Python</span><div class="bar"><i style="--w:60%"></i></div></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Công cụ</h3>
+            <ul class="tag-list">
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>Google API</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DỰ ÁN ===== -->
+    <section id="du-an" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Dự án</h2>
+
+        <div class="project-tools">
+          <input type="search" id="projectSearch" class="search-input"
+                 placeholder="Tìm dự án theo tên hoặc mô tả…" aria-label="Tìm kiếm dự án">
+          <div class="filter-buttons" role="group" aria-label="Lọc theo tag">
+            <button class="filter-btn active" data-filter="all" type="button">Tất cả</button>
+            <button class="filter-btn" data-filter="html-css" type="button">HTML/CSS</button>
+            <button class="filter-btn" data-filter="javascript" type="button">JavaScript</button>
+            <button class="filter-btn" data-filter="api" type="button">API</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-tags="javascript html-css">
+            <h3>Trang web Quiz</h3>
+            <p>Trang làm bài trắc nghiệm: hiển thị câu hỏi, chọn đáp án, chấm điểm và báo kết quả khi làm xong.</p>
+            <ul class="card-tags"><li>JavaScript</li><li>HTML/CSS</li></ul>
+          </article>
+          <article class="project-card" data-tags="javascript html-css">
+            <h3>To-do App</h3>
+            <p>Ứng dụng quản lý công việc: thêm, đánh dấu hoàn thành và xóa các việc cần làm.</p>
+            <ul class="card-tags"><li>JavaScript</li><li>HTML/CSS</li></ul>
+          </article>
+          <article class="project-card" data-tags="javascript html-css api">
+            <h3>Quản lý kênh YouTube</h3>
+            <p>Trang web dùng API key của Google (YouTube Data API) để lấy thông tin kênh theo thời gian thực.</p>
+            <ul class="card-tags"><li>JavaScript</li><li>API</li></ul>
+          </article>
+          <article class="project-card" data-tags="html-css javascript">
+            <h3>Trang giới thiệu bản thân</h3>
+            <p>Chính là trang bạn đang xem: responsive, có chế độ tối, lọc dự án và form liên hệ có kiểm tra dữ liệu.</p>
+            <ul class="card-tags"><li>HTML/CSS</li><li>JavaScript</li></ul>
+          </article>
+        </div>
+        <p class="empty-message" id="emptyMessage" hidden>Không có dự án nào khớp. Thử từ khóa khác hoặc chọn "Tất cả".</p>
+      </div>
+    </section>
+
+    <!-- ===== LIÊN HỆ ===== -->
+    <section id="lien-he" class="section">
+      <div class="container contact-inner">
+        <div class="contact-text reveal">
+          <h2 class="section-title">Liên hệ</h2>
+          <p>Bạn muốn góp ý, rủ làm dự án chung hay chỉ đơn giản là chào hỏi? Gửi tin nhắn cho mình qua form này nhé.</p>
+          <p class="contact-direct">Email: <a href="mailto:quyenhn0609@gmail.com">quyenhn0609@gmail.com</a></p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Họ tên *</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="form-row">
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Không bắt buộc">
+            <small class="error" data-for="phone"></small>
+          </div>
+          <div class="form-row">
+            <label for="subject">Chủ đề *</label>
+            <select id="subject" name="subject">
+              <option value="">-- Chọn chủ đề --</option>
+              <option value="gop-y">Góp ý</option>
+              <option value="hop-tac">Hợp tác dự án</option>
+              <option value="khac">Khác</option>
+            </select>
+            <small class="error" data-for="subject"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Tin nhắn *</label>
+            <textarea id="message" name="message" rows="5" maxlength="500"></textarea>
+            <div class="message-meta">
+              <small class="error" data-for="message"></small>
+              <small class="char-count" id="charCount">0/500</small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+          <p class="form-success" id="formSuccess" hidden>Đã gửi tin nhắn. Cảm ơn bạn!</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Hoàng Ngọc Quyên – B25DCCC189</p>
+      <a href="https://github.com/B25DCCC189-HoangNgocQuyen" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Lên đầu trang">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
